@@ -116,7 +116,9 @@ nav>.container{
         flex-direction: column;
         padding: 2rem;
         justify-content: space-around;
-        transform: translateX(-100%);
+        transform: translateY(-100%);
+
+        transition: all 0.5s ease;
     }
 
     .toggle{
@@ -129,7 +131,25 @@ nav>.container{
         z-index: 20;
     }
 
+    .open{
+        display: block!important;
+    }
+
+    .close{
+        display: none!important;
+    }
+
+    .nav-open .open{
+        display: none!important;
+    }
+
+    .nav-open .close{
+        display: block!important;
+    }
  
+    .nav-open .menu{
+        transform: translateY(0);
+    }
     
 }
 
