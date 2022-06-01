@@ -1,0 +1,301 @@
+/* === MISE EN PAGE GENERALE === */
+
+html{
+    font-family: 'Arial', sans-serif; 
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+    color: #000;
+}
+
+.container{
+    width: 90%;
+    margin: 0 auto;
+}
+
+ul{
+    list-style: none;
+}
+
+.flex-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/* Title */
+
+.second-title{
+    font-family: 'Roboto Slab, serif';
+    font-size: 36px;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+}
+
+/* Button */
+
+.main-btn{
+    display: block;
+    width: 100%;
+    background: #000;
+    padding: 10px 0;
+    border-radius: 10px;
+}
+
+.main-btn a{
+    color: #fff;
+}
+
+
+
+/* === HEADER === */
+nav img{
+    margin-top: 15px;
+}
+
+/* === MAIN === */
+
+/* Hero */
+
+#hero{
+    background-color: #FF90E8;
+    padding-bottom: 30px;
+}
+
+#hero div{
+    text-align: center;
+}
+
+#hero h1{
+    font-family: Roboto-Slab, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 32px;
+    letter-spacing: 0.1em;
+
+    padding-top: 30px;
+}
+
+/* Yellow */
+
+#yellow{
+    background-color: #FFC900;
+    border: #000 solid 1px;
+}
+
+#yellow div{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#yellow img{
+    margin: 0 auto;
+    width: 100%;
+}
+
+.img-container{
+    padding: 30px 0;
+    max-width: 300px;
+    position: relative;
+}
+
+#yellow img:nth-child(2){
+    position: absolute;
+    top: 10px;
+    right: -20px;
+    height: 80px;
+    width: auto;
+}
+
+#yellow img:nth-child(2):hover{
+    transform: rotate(360deg);
+    transition: all 1s ease;
+}
+
+/* Text Anim */
+
+#presentation{
+  display: flex;  
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  background-color: #000;
+}
+
+.anim-container{
+    overflow: hidden;
+    width: 100%;
+    color: #fff;
+    display: flex;
+}
+
+.txt{
+    font-size: 60px;
+    white-space: nowrap;
+    animation: scrollTxt 10s linear infinite;
+}
+
+@keyframes scrollTxt{
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(-100%);
+    }
+}
+
+/* Anim image */
+
+#yellow-img{
+    background-color: #FFC900;
+}
+
+#yellow-img div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#yellow-img img:nth-child(1){
+    display: block;
+}
+
+#yellow-img img:nth-child(2){
+    display: none;
+}
+
+#yellow-img:hover img:nth-child(1){
+    display: none;
+}
+
+#yellow-img:hover img:nth-child(2){
+    display: block;
+}
+
+/* Purple */
+
+#purple{
+    width: 100%;
+}
+
+#purple > div:nth-child(1) {
+    background-color: #B23386;
+}
+
+#purple > div:nth-child(2) {
+    background-color: #FF90E8;
+}
+
+
+#purple h3{
+    font-family: 'Arial' sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 28px;
+    text-align: center;
+    letter-spacing: 0.18em;
+
+    margin: 0;
+    padding: 30px 0;
+
+}
+
+
+/* Story */
+
+#story>div{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+
+    position: relative;
+}
+
+#story>div:nth-child(1){
+    background-color: #000;
+}
+
+#story>div:nth-child(2){
+    background-color: #FFC900;
+}
+
+#story img{
+    width: 70%;
+}
+
+#story span{
+    position: absolute;
+    display: block;
+    background-color: #fff;
+    font-size: 25px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #000;
+}
+
+#story div:nth-child(1)>span{
+    top: 20%;
+    right: 3%;  
+}
+
+#story div:nth-child(2)>span{
+    bottom: 20%;
+    left: 3%;  
+}
+
+
+/* List */
+
+#list{
+    background-color: #FFC900;
+}
+
+#list li{
+    margin-bottom: 10px ;
+    padding-left: 3.5rem;
+    background-image: url(../images/arrow.svg);
+    background-repeat: no-repeat;
+    background-size: 2.5rem;
+    background-position: 0%, 60%;
+
+    /* 2eme solution */
+    /* list-style-image: url(../images/arrow.svg); */
+
+}
+
+
+
+/* Question */
+
+
+
+/* Yellow img */
+
+
+
+/* === FOOTER === */
+
+
+/* RESPONSIVE */
+
+@media screen and (min-width: 780px){
+
+    .flex-desktop{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+
+}

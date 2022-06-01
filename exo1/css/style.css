@@ -79,6 +79,62 @@ input, textarea{
 
 /* === HEADER === */
 
+nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    z-index: 100;
+    text-decoration: none;
+    width: 100%;
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0.447);
+}
+
+nav > div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.logo{
+    color: #FFF;
+    font-size: 28px;
+}
+
+.menu{
+    width: 40%;
+}
+
+.menu ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu a{
+    color: #FFF;
+    font-size: 16px;
+}
+
+.menu a:hover{
+    color: red;
+    transition: all 1s ease;
+}
+
+.menu li:hover{
+    transform: scale(1.2);
+    transition: all 1s ease;
+}
+
+
+
 /* === MAIN === */
 
 /* Hero */
@@ -161,4 +217,35 @@ form > div{
 
 .form-first-row > div{
     width: 45%;
+}
+
+/* ---- RESPONSIVE ---- */
+
+@media screen and (max-width: 780px){
+
+    .container{
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    #hero h1{
+        font-size: 60px;
+    }
+
+    img{
+        width: 100%;
+    }
+
+    #histoire{
+        display: block;
+    }
+
+    .form-first-row div{
+        width: 100%;
+        display: block;
+    }
+
+    .form-first-row div:nth-child(1){
+        margin-bottom: 40px;
+    }
 }
