@@ -30,6 +30,15 @@ ul{
     justify-content: space-between;
 }
 
+.image-desktop{
+    display: none;
+}
+
+img{
+    display: block;
+    width: 100%;
+    object-fit: contain;
+}
 /* Title */
 
 .second-title{
@@ -309,11 +318,46 @@ nav img{
 
 @media screen and (min-width: 780px){
 
+    .image-desktop{
+        display: block;
+        width: 50%;
+    }
+
     .flex-desktop{
         display: flex;
         flex-direction: row;
         justify-content: space-between;
     }
 
+    .flex-desktop>div{
+        width: 50%;
+    }
 
+    #list.flex-desktop{
+        gap: 15px;
+    }
+
+    nav img{
+        width: 20%;
+    }
+
+    #hero{
+        width: 50%;
+    }
+
+    #yellow{
+        width: 50%;
+    }
+
+    #purple h3{
+        padding: 50px 0;
+    }
+
+    #yellow-img img{
+        width: 60%;
+    }
+
+    #explore{
+        text-align: center;
+    }
 }
