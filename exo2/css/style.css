@@ -39,6 +39,21 @@ ul{
     letter-spacing: 0.1em;
 }
 
+.title-btn{
+    display: block;
+    margin: 30px 0;
+    font-family: 'Roboto Slab', serif;
+    font-size: 28px;
+    letter-spacing: 0.1em;
+}
+
+.title-btn::after{
+    content: "→";
+    font-family: 'Roboto Slab', serif;
+    font-size: 25px;
+    padding-left: 20px;
+}
+
 /* Button */
 
 .main-btn{
@@ -254,6 +269,9 @@ nav img{
     left: 3%;  
 }
 
+#explore {
+    padding: 40px 0;
+}
 
 /* List */
 
