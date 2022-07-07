@@ -1,0 +1,105 @@
+/* === MISE EN PAGE GENERALE === */
+
+html{
+
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: #000;
+}
+
+img{
+    display: block;
+    width: 100%;
+}
+
+.container{
+    width: 90%;
+    margin: 0 auto;
+}
+
+.flex-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* BTN */
+
+.main-btn{
+    background-color: #139909;
+    padding: 10px 25px;
+    color: #FFF;
+    border-radius: 5px;
+}
+
+.double-btn{
+    margin-top: 40px;
+    width: 70%;
+}
+
+.spin-btn img{
+    width: 10%;
+    transition: transform .7s ease-in-out;
+}
+
+.spin-btn:hover img{
+   transform: rotate(360deg);
+}
+
+
+
+
+/* Title */
+
+h1{
+    font-family: 'Abril Fatface', cursive;
+    font-size: 40px;
+    margin: 5px 0;
+}
+
+h3{
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 16px;
+    color: #523CE6;
+    letter-spacing: 4px;
+
+    margin: 0;
+}
+
+
+/* === HEADER === */
+
+/* Nav */
+
+.menu{
+    width: 35%;
+}
+
+.menu li:first-child>a{
+    color: #523CE6;
+}
+
+/* === MAIN === */
+
+/* Hero */
+
+#hero{
+    margin-top: 50px;
+    gap: 10px;
+}
+
+
+/* === FOOTER === */

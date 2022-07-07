@@ -1,0 +1,132 @@
+/* Clean */
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: #FFF;
+}
+
+i{
+    color: #FFF;
+    font-size: 30px;
+
+    position: relative;
+    z-index: 200;
+}
+
+/* Title */
+
+h1{
+    text-align: center;
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.container{
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* Hero */
+
+#hero{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
+}
+
+/* Nav */
+
+nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    background: #000;
+    width: 100%;
+    padding: 10px 0;
+}
+
+nav>.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu{
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 0 auto;
+  background-color: #000;
+  transform: translateX(-100%);
+
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s ease;
+}
+
+.menu ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    height: 50vh;
+    text-align: center;
+}
+
+.menu li{
+    margin-bottom: 20px;
+
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.main-btn {
+    display: block;
+    width: 100px;
+    margin: 0 auto;
+    padding: 20px 30px;
+    border-radius: 20px;
+
+    border: 2px solid #FFF;
+
+    transition: all 0.5s ease;
+}
+
+.main-btn:hover{
+    color: #000;
+    background-color: #fff;
+}
+
+.close{
+    display: none !important;
+}
+
+/* Menu Open */
+
+.nav-open .menu{
+    transform: translateX(0);
+}
+
+.nav-open .close{
+    display: block !important;
+}
+
+.nav-open .open{
+    display: none !important;
+}
+
